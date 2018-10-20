@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Lab2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FeA-36-76R" userLabel="Top Color Banner">
+                                <rect key="frame" x="0.0" y="28" width="375" height="233.5"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bird" highlightedImage="bunny" translatesAutoresizingMaskIntoConstraints="NO" id="0tm-no-kIX">
+                                        <rect key="frame" x="121.5" y="50" width="133" height="133"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="0tm-no-kIX" secondAttribute="height" multiplier="1:1" id="ufe-I7-dcI"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="0tm-no-kIX" firstAttribute="centerY" secondItem="FeA-36-76R" secondAttribute="centerY" id="iVk-o1-f20"/>
+                                    <constraint firstItem="0tm-no-kIX" firstAttribute="centerX" secondItem="FeA-36-76R" secondAttribute="centerX" id="jA2-fe-p6l"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="CGk-4Y-237" userLabel="PetSelector">
+                                <rect key="frame" x="32" y="618.5" width="311" height="33.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bDJ-RR-ghL" userLabel="Bird">
+                                        <rect key="frame" x="0.0" y="0.0" width="62" height="33.5"/>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                        <state key="normal" title="Bird"/>
+                                        <connections>
+                                            <action selector="birdButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mJ6-e8-CQ6"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r8r-6b-F9Y" userLabel="Bunny">
+                                        <rect key="frame" x="62" y="0.0" width="62.5" height="33.5"/>
+                                        <state key="normal" title="Bunny"/>
+                                        <connections>
+                                            <action selector="bunnyButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kaO-06-N6s"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="juf-Dk-s68" userLabel="Cat">
+                                        <rect key="frame" x="124.5" y="0.0" width="62" height="33.5"/>
+                                        <state key="normal" title="Cat"/>
+                                        <connections>
+                                            <action selector="catButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pa2-MV-R0Q"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uEI-uB-EcL" userLabel="Dog">
+                                        <rect key="frame" x="186.5" y="0.0" width="62.5" height="33.5"/>
+                                        <state key="normal" title="Dog"/>
+                                        <connections>
+                                            <action selector="dogButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iP0-wA-c3q"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cWn-Ts-Dum" userLabel="Fish">
+                                        <rect key="frame" x="249" y="0.0" width="62" height="33.5"/>
+                                        <state key="normal" title="Fish"/>
+                                        <connections>
+                                            <action selector="fishButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yFQ-hP-6d0"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sty-W5-Are" userLabel="Play">
+                                <rect key="frame" x="15" y="276.5" width="169" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="qUu-OL-QxI"/>
+                                </constraints>
+                                <state key="normal" title="Play"/>
+                                <connections>
+                                    <action selector="playButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wRM-7U-1ap"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4C7-l4-cVA" userLabel="Feed">
+                                <rect key="frame" x="191.5" y="276.5" width="168.5" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="kOC-Tf-QfD"/>
+                                </constraints>
+                                <state key="normal" title="Feed"/>
+                                <connections>
+                                    <action selector="feedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IH5-5B-jof"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillEqually" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="Gsa-T5-K1g" userLabel="Info Stack">
+                                <rect key="frame" x="15" y="480.5" width="341.5" height="133"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="0NF-FX-bh7" userLabel="Happiness">
+                                        <rect key="frame" x="0.0" y="0.0" width="341.5" height="63"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jsq-nh-eCz" userLabel="Happiness Words">
+                                                <rect key="frame" x="0.0" y="0.0" width="341.5" height="31"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Happiness" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pV7-On-49Q" userLabel="Happiness Level">
+                                                        <rect key="frame" x="0.0" y="0.0" width="133.5" height="31"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a3t-Jg-Mdn" userLabel="Happiness Level Number">
+                                                        <rect key="frame" x="133.5" y="0.0" width="208" height="31"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2HC-Lc-K7H" userLabel="Happiness Bar" customClass="DisplayView" customModule="Lab2">
+                                                <rect key="frame" x="0.0" y="31" width="341.5" height="32"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="pV7-On-49Q" firstAttribute="width" secondItem="2HC-Lc-K7H" secondAttribute="height" multiplier="46:11" id="bZf-EY-KrQ"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="xfY-DV-WVB" userLabel="Food">
+                                        <rect key="frame" x="0.0" y="70" width="341.5" height="63"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xvv-13-wh3" userLabel="Food Words">
+                                                <rect key="frame" x="0.0" y="0.0" width="341.5" height="31.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food Level" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q1Y-KY-tHV" userLabel="Food Level">
+                                                        <rect key="frame" x="0.0" y="0.0" width="132" height="31.5"/>
+                                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PjD-f9-gaa" userLabel="Food Level Number">
+                                                        <rect key="frame" x="132" y="0.0" width="209.5" height="31.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="23w-JB-ggJ" userLabel="Food Bar" customClass="DisplayView" customModule="Lab2">
+                                                <rect key="frame" x="0.0" y="31.5" width="341.5" height="31.5"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Q1Y-KY-tHV" firstAttribute="height" secondItem="23w-JB-ggJ" secondAttribute="height" id="Txk-PI-j99"/>
+                                            <constraint firstItem="Q1Y-KY-tHV" firstAttribute="width" secondItem="23w-JB-ggJ" secondAttribute="height" multiplier="46:11" id="cB8-GO-suC"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="2HC-Lc-K7H" firstAttribute="height" secondItem="23w-JB-ggJ" secondAttribute="height" id="nFx-vz-vqJ"/>
+                                </constraints>
+                                <variation key="heightClass=compact" axis="horizontal"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="CGk-4Y-237" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="16" id="1ZE-RC-tEq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="CGk-4Y-237" secondAttribute="trailing" constant="16" id="4ED-Vp-e3H"/>
+                            <constraint firstItem="FeA-36-76R" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.35" id="4ir-4k-bQ6"/>
+                            <constraint firstItem="Sty-W5-Are" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.45" id="6HU-S5-nKs"/>
+                            <constraint firstItem="FeA-36-76R" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="98X-lR-Iit"/>
+                            <constraint firstItem="FeA-36-76R" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="9Za-ec-J6L"/>
+                            <constraint firstItem="FeA-36-76R" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="CS8-Kw-Bh0"/>
+                            <constraint firstItem="4C7-l4-cVA" firstAttribute="top" secondItem="FeA-36-76R" secondAttribute="bottom" constant="15" id="Hbw-ub-1hy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Gsa-T5-K1g" secondAttribute="trailing" constant="2.5" id="Oso-Ah-2cP"/>
+                            <constraint firstItem="0tm-no-kIX" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.2" id="PQO-t7-5dD"/>
+                            <constraint firstAttribute="trailing" secondItem="4C7-l4-cVA" secondAttribute="trailing" constant="15" id="Sc5-Ut-42D"/>
+                            <constraint firstAttribute="trailing" secondItem="FeA-36-76R" secondAttribute="trailing" id="Th4-jm-V52"/>
+                            <constraint firstAttribute="trailing" secondItem="4C7-l4-cVA" secondAttribute="trailing" constant="15" id="XTJ-s0-ptT"/>
+                            <constraint firstItem="CGk-4Y-237" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.05" id="XTp-ax-Idw"/>
+                            <constraint firstItem="FeA-36-76R" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Yko-8a-1o7"/>
+                            <constraint firstItem="4C7-l4-cVA" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.45" id="cM8-M5-6JP"/>
+                            <constraint firstItem="Sty-W5-Are" firstAttribute="top" secondItem="FeA-36-76R" secondAttribute="bottom" constant="15" id="eK0-eW-f7Z"/>
+                            <constraint firstItem="Gsa-T5-K1g" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.2" id="lI0-5G-Lrh"/>
+                            <constraint firstItem="Sty-W5-Are" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="15" id="sMb-tR-AFH"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="CGk-4Y-237" secondAttribute="bottom" constant="15" id="stH-QN-SMK"/>
+                            <constraint firstItem="Gsa-T5-K1g" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="15" id="t7f-9C-itU"/>
+                            <constraint firstItem="CGk-4Y-237" firstAttribute="top" secondItem="Gsa-T5-K1g" secondAttribute="bottom" constant="5" id="u8S-o6-8D9"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="banner" destination="FeA-36-76R" id="sUM-dD-Mkq"/>
+                        <outlet property="foodBar" destination="23w-JB-ggJ" id="SHe-jw-arV"/>
+                        <outlet property="foodValue" destination="PjD-f9-gaa" id="YSP-5F-vk7"/>
+                        <outlet property="happinessBar" destination="2HC-Lc-K7H" id="bW9-UT-NOc"/>
+                        <outlet property="happinessValue" destination="a3t-Jg-Mdn" id="5f9-MM-oM6"/>
+                        <outlet property="petImage" destination="0tm-no-kIX" id="W4O-Nh-R9I"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="114.40000000000001" y="121.88905547226388"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bird" width="100" height="100"/>
+        <image name="bunny" width="100" height="100"/>
+    </resources>
+</document>
